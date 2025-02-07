@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: black;
+    margin: 0;
+}
+
+.rose-container {
+    position: relative;
+}
+
+.rose {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, red 40%, pink 60%, rgba(255, 0, 0, 0.2) 80%);
+    border-radius: 50%;
+    box-shadow: 0 0 20px red, 0 0 40px pink, 0 0 60px crimson;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 20px red, 0 0 40px pink, 0 0 60px crimson;
+    }
+    100% {
+        box-shadow: 0 0 30px red, 0 0 50px pink, 0 0 70px crimson;
+    }
+}
